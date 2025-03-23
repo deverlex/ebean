@@ -1,6 +1,10 @@
 ebean:
   test:
-    platform: h2
-    ddlMode: dropCreate
-    dbName: foo
-
+    useDocker: false
+    platform: mysql
+    ddlMode: none
+    dbName: test
+    mysql:
+      username: root
+      password: "kido@2023#growthup"
+      url: jdbc:mysql://localhost:3306/test
